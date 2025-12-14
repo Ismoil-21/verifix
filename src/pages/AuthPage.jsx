@@ -192,7 +192,12 @@ const AuthPage = ({ isRegister = false }) => {
     <div className="flex items-center justify-center min-h-screen bg-black">
       <div
         className="flex items-center justify-center bg-black"
-        style={{ width: "100%", height: "600px", position: "relative" }}
+        style={{
+          width: "100%",
+          height: "100vh",
+          background: "rgb(0, 0, 20)",
+          position: "relative",
+        }}
       >
         <Galaxy />
 
