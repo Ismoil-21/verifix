@@ -192,21 +192,14 @@ const AuthPage = ({ isRegister = false }) => {
     <div className="flex items-center justify-center min-h-screen bg-black">
       <div
         className="flex items-center justify-center bg-black"
-        style={{ width: "100%", height: "100%", position: "relative" }}
+        style={{ width: "100%", height: "600px", position: "relative" }}
       >
-        <Galaxy
-          mouseRepulsion={true}
-          mouseInteraction={true}
-          density={1.5}
-          glowIntensity={0.5}
-          saturation={0.8}
-          hueShift={240}
-        />
+        <Galaxy />
 
         <div className="absolute w-full max-w-md z-10">
           <div className="text-center mb-8 animate-fade-in">
             <div className="inline-flex items-center gap-3 bg-transparent px-6 py-3 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform">
-              <Shield className="w-10 h-10 text-blue-600" />
+              <Shield className="w-10 h-10 text-white" />
               <h1 className="text-3xl font-bold text-white">Verifix</h1>
             </div>
             <p className="text-white text-lg mt-4 font-medium">
@@ -217,7 +210,7 @@ const AuthPage = ({ isRegister = false }) => {
             </p>
           </div>
 
-          <div className="rounded-2xl opacity-80 bg-linear-to-b from-blue-500 to-gray-900 shadow-2xl p-8 animate-slide-up">
+          <div className="rounded-2xl opacity-90 bg-gray-900 shadow-2xl p-8 animate-slide-up">
             <div className="flex gap-2 mb-8 px-2 opacity-80 bg-white p-1 rounded-xl sticky top-4">
               <button
                 onClick={() => {
@@ -543,7 +536,7 @@ const AuthPage = ({ isRegister = false }) => {
             </div>
           </div>
 
-          <div className="text-center mt-6 text-white text-sm">
+          <div className="text-center my-5 text-white text-sm">
             <p>© 2025 Verifix. Barcha huquqlar himoyalangan.</p>
           </div>
         </div>
