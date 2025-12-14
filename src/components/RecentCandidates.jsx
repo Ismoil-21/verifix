@@ -1,4 +1,3 @@
-// components/RecentCandidates.jsx - FULL WORKING VERSION
 import React, { useState, useEffect } from "react";
 import StatusBadge from "./StatusBadge";
 
@@ -14,7 +13,6 @@ const RecentCandidates = () => {
       const stored = localStorage.getItem("verifixCandidates");
       if (stored) {
         const all = JSON.parse(stored);
-        // Get last 4 candidates
         const recent = all.slice(-4).reverse();
         setCandidates(recent);
       }

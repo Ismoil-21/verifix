@@ -47,7 +47,6 @@ const CandidatesPage = () => {
       if (stored) {
         setCandidates(JSON.parse(stored));
       } else {
-        // Initialize with demo data
         const demoData = [
           {
             id: 1,
@@ -102,7 +101,6 @@ const CandidatesPage = () => {
   const filterCandidates = () => {
     let filtered = candidates;
 
-    // Search filter
     if (searchQuery) {
       filtered = filtered.filter(
         (c) =>
@@ -112,7 +110,6 @@ const CandidatesPage = () => {
       );
     }
 
-    // Status filter
     if (filterStatus !== "all") {
       filtered = filtered.filter((c) => c.status === filterStatus);
     }
@@ -146,7 +143,6 @@ const CandidatesPage = () => {
 
   return (
     <div className="animate-fade-in">
-      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h2 className="text-3xl font-bold text-gray-800">Nomzodlar</h2>
@@ -193,7 +189,6 @@ const CandidatesPage = () => {
         </div>
       </div>
 
-      {/* Candidates Grid */}
       {filteredCandidates.length === 0 ? (
         <div className="bg-white rounded-xl shadow-md p-12 text-center">
           <p className="text-gray-500 text-lg">Nomzod topilmadi</p>
@@ -205,7 +200,6 @@ const CandidatesPage = () => {
               key={candidate.id}
               className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all transform hover:-translate-y-1 cursor-pointer"
             >
-              {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div
                   className="flex items-center gap-4 flex-1"
@@ -323,7 +317,6 @@ const CandidatesPage = () => {
   );
 };
 
-// Add Candidate Modal Component
 const AddCandidateModal = ({ onClose, onAdd }) => {
   const [formData, setFormData] = useState({
     name: "",

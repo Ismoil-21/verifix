@@ -1,4 +1,3 @@
-// components/TopMentors.jsx - FULL WORKING VERSION
 import React, { useState, useEffect } from "react";
 import { Star, CheckCircle } from "lucide-react";
 
@@ -14,7 +13,6 @@ const TopMentors = () => {
       const stored = localStorage.getItem("verifixMentors");
       if (stored) {
         const all = JSON.parse(stored);
-        // Sort by rating and get top 4
         const top = all.sort((a, b) => b.rating - a.rating).slice(0, 4);
         setMentors(top);
       }

@@ -58,17 +58,6 @@ const DocumentsPage = () => {
           },
           {
             id: 2,
-            name: "Zilola Rahimova - Resume",
-            type: "resume",
-            candidate: "Zilola Rahimova",
-            uploadDate: "2025-12-12",
-            size: "1.8 MB",
-            status: "pending",
-            signedBy: null,
-            createdAt: new Date().toISOString(),
-          },
-          {
-            id: 3,
             name: "Sardor Tursunov - Sertifikat",
             type: "certificate",
             candidate: "Sardor Tursunov",
@@ -79,7 +68,7 @@ const DocumentsPage = () => {
             createdAt: new Date().toISOString(),
           },
           {
-            id: 4,
+            id: 3,
             name: "Malika Yusupova - Buyruq",
             type: "order",
             candidate: "Malika Yusupova",
