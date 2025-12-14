@@ -183,6 +183,7 @@ const CandidatesPage = () => {
             <option value="all">Barcha statuslar</option>
             <option value="interview">Suhbat</option>
             <option value="verification">Tekshiruv</option>
+            <option value="test">Test Bosqichi</option>
             <option value="accepted">Qabul qilindi</option>
           </select>
           <button className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
@@ -261,7 +262,7 @@ const CandidatesPage = () => {
                 </div>
               </div>
 
-              <div className="relative z-0 overflow-hidden">
+              <div className="relative z-0 overflow-hidden pb-5">
                 <Timeline stage={candidate.stage} />
               </div>
 
@@ -270,15 +271,25 @@ const CandidatesPage = () => {
                   onClick={() =>
                     updateCandidateStatus(candidate.id, "interview", 2)
                   }
-                  className="flex-1 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                  className="w-40 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
                 >
                   Suhbat Belgilash
                 </button>
+
+                  <button
+                    onClick={() =>
+                      updateCandidateStatus(candidate.id, "test", 3)
+                    }
+                    className="w-40 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 tranisiton-colors text-sm font-medium"
+                  >
+                    Test Topshirildi
+                  </button>
+
                 <button
                   onClick={() =>
                     updateCandidateStatus(candidate.id, "accepted", 4)
                   }
-                  className="flex-1 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
+                  className="w-40 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
                 >
                   Qabul Qilish
                 </button>

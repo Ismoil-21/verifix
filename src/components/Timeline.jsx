@@ -4,10 +4,10 @@ import { CheckCircle } from "lucide-react";
 
 const Timeline = ({ stage }) => {
   const stages = [
-    "Ariza yubordi",
+    "Ariza yuborildi",
     "Suhbat belgilandi",
     "Test topshirildi",
-    "Qaror",
+    "Qaror qabul qilindi",
   ];
 
   return (
@@ -21,15 +21,15 @@ const Timeline = ({ stage }) => {
 
         <div
           className="absolute top-1/2 left-0 h-1 bg-linear-to-r from-green-400 to-green-500 -translate-y-1/2 transition-all duration-500 rounded-full shadow-md"
-          style={{ width: `${(stage / (stages.length - 1)) * 100}%` }}
+          style={{ width: `${(stage / (stages.length - 1)) * 93}%` }}
         />
 
         {stages.map((stageName, idx) => (
-          <div key={idx} className="relative z-10 flex flex-col items-center">
+          <div key={idx} className="relative z-10 flex flex-col items-center top-3">
             <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-md ${
+              className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md ${
                 idx < stage
-                  ? "bg-green-500 text-white scale-110"
+                  ? "bg-green-500 text-white scale-100"
                   : idx === stage
                   ? "bg-blue-500 text-white scale-110 animate-pulse"
                   : "bg-gray-300 text-gray-600"

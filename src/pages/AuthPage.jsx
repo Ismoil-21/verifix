@@ -193,14 +193,6 @@ const AuthPage = ({ isRegister = false }) => {
     }
   };
 
-  const fillDemoAccount = (account) => {
-    setFormData({
-      ...formData,
-      email: account.email,
-      password: account.password,
-    });
-  };
-
   return (
     <div className="min-h-screen flex items-center bg-blue-700 justify-center p-4 relative overflow-hidden">
       <div className="relative w-full max-w-md z-10">

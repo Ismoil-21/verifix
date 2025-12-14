@@ -71,32 +71,24 @@ const Dashboard = () => {
       value: stats.newCandidates,
       icon: Users,
       color: "blue",
-      change: "+12%",
-      trend: "up",
     },
     {
       label: "Kutilayotgan Suhbatlar",
       value: stats.pendingInterviews,
       icon: Calendar,
       color: "green",
-      change: "+5%",
-      trend: "up",
     },
     {
       label: "Faol Mentorlar",
       value: stats.activeMentors,
       icon: Award,
       color: "purple",
-      change: "+3%",
-      trend: "up",
     },
     {
       label: "Verifikatsiya Kutilmoqda",
       value: stats.pendingVerification,
       icon: Clock,
       color: "orange",
-      change: "-2%",
-      trend: "down",
     },
   ];
 
@@ -136,18 +128,6 @@ const Dashboard = () => {
               <div className="flex items-center justify-between mb-4">
                 <div className={`p-3 bg-${stat.color}-100 rounded-lg`}>
                   <Icon className={`w-6 h-6 text-${stat.color}-600`} />
-                </div>
-                <div
-                  className={`flex items-center gap-1 text-sm font-semibold ${
-                    stat.trend === "up" ? "text-green-600" : "text-red-600"
-                  }`}
-                >
-                  {stat.trend === "up" ? (
-                    <ArrowUp className="w-4 h-4" />
-                  ) : (
-                    <ArrowDown className="w-4 h-4" />
-                  )}
-                  <span>{stat.change}</span>
                 </div>
               </div>
               <h3 className="text-3xl font-bold text-gray-800 mb-1">

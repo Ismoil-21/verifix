@@ -49,10 +49,10 @@ const MentorsPage = () => {
             name: "Jasur Hakimbekov",
             specialty: "Frontend Development",
             rating: 4.9,
-            students: 45,
+            students: 118,
             verified: true,
             active: true,
-            courses: 3,
+            courses: 15,
             attendance: 95,
             completionRate: 88,
             experience: "7 yil",
@@ -62,12 +62,12 @@ const MentorsPage = () => {
           {
             id: 2,
             name: "Aziz Badalov",
-            specialty: "Full Stack Developer",
+            specialty: "Full Stack Development",
             rating: 4.8,
-            students: 38,
+            students: 107,
             verified: true,
             active: true,
-            courses: 2,
+            courses: 12,
             attendance: 92,
             completionRate: 91,
             experience: "5 yil",
@@ -79,12 +79,12 @@ const MentorsPage = () => {
             name: "Behruz Satimbayev",
             specialty: "Full Stack Development",
             rating: 4.7,
-            students: 42,
+            students: 98,
             verified: true,
             active: true,
-            courses: 4,
+            courses: 9,
             attendance: 89,
-            completionRate: 85,
+            completionRate: 97,
             experience: "6 yil",
             reviews: 35,
             createdAt: new Date().toISOString(),
@@ -93,13 +93,13 @@ const MentorsPage = () => {
             id: 4,
             name: "Ziyovuddin Abdurashidov",
             specialty: "Frontend Development",
-            rating: 4.9,
+            rating: 4.6,
             students: 45,
             verified: true,
             active: true,
             courses: 3,
             attendance: 95,
-            completionRate: 88,
+            completionRate: 98,
             experience: "3 yil",
             reviews: 38,
             createdAt: new Date().toISOString(),
@@ -197,8 +197,7 @@ const MentorsPage = () => {
             <option value="all">Barcha mutaxassisliklar</option>
             <option value="Frontend Development">Frontend Development</option>
             <option value="Backend Development">Backend Development</option>
-            <option value="UX/UI Design">UX/UI Design</option>
-            <option value="Mobile Development">Mobile Development</option>
+            <option value="Full Stack Development">Full Stack Development</option>
           </select>
           <button className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
             <Filter className="w-5 h-5" />
@@ -419,8 +418,7 @@ const AddMentorModal = ({ onClose, onAdd }) => {
               <option value="">Tanlang</option>
               <option value="Frontend Development">Frontend Development</option>
               <option value="Backend Development">Backend Development</option>
-              <option value="UX/UI Design">UX/UI Design</option>
-              <option value="Mobile Development">Mobile Development</option>
+              <option value="Full Stack Development">Full Stack Development</option>
             </select>
           </div>
 
